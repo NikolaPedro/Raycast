@@ -1,6 +1,7 @@
 #include "transform.h"
 
-class Plane : Transform {
+class Plane : Transform 
+{
 public:
     double x;
     double y;
@@ -8,12 +9,14 @@ public:
     double w;
 };
 
-class Cube : Transform {
+class Cube : Transform 
+{
 public:
     double size;
 };
 
-class Sphere : Transform {
+class Sphere : Transform 
+{
 public:
     double radius;
 };

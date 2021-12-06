@@ -1,7 +1,8 @@
 #include <transform.h>
 #include "color.h"
 
-class Light : Transform {
+class Light : Transform 
+{
 public:
     Color color;
 
