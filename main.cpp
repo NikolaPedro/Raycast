@@ -5,6 +5,11 @@
 int main() 
 {
     Camera camera;
-    camera.draw();
+
+    for (size_t i = 0; i < 1; i++)
+    {
+        camera.draw(i);
+    }
+
     getchar();
 }
