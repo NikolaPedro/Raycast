@@ -7,9 +7,10 @@ public:
     Vector3 position;
     Vector3 rotation;
 
-    Transform() {
-        position = Vector3();
-        rotation = Vector3();
+    Transform(Vector3 pos = Vector3(), Vector3 rot = Vector3()) 
+    {
+        position = pos;
+        rotation = rot;
     }
 
     void look_at(Vector3 point) 
