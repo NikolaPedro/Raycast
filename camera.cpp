@@ -18,7 +18,7 @@ private:
         double _x = (double)x / width * 2 - 1;
         double _y = (double)y / height * 2 - 1;
         _x *= aspect;
-        _x += sin(i * 0.01);
+        _x += sin(i * 0.002);
         double distance = Vector3(0, 0).distance_to(Vector3(_x, _y));
         return distance < 0.5 ? '@' : ' ';
     }
