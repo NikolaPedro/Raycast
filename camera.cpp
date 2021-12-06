@@ -16,8 +16,8 @@ private:
         double _x = (double)x / width * 2 - 1;
         double _y = (double)y / height * 2 - 1;
         _x *= aspect;
-        double distance = Vector3(0.5, 0.5).distance_to(Vector3(_x, _y));
-        return distance < 0.31 ? '@' : ' ';
+        double distance = Vector3(0, 0).distance_to(Vector3(_x, _y));
+        return distance < 1 ? '@' : ' ';
     }
 
 public:
