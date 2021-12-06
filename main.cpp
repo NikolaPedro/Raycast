@@ -6,10 +6,8 @@ int main()
 {
     Camera camera;
 
-    for (size_t i = 0; i < 1; i++)
-    {
+    for (size_t i = 0; i < 10000; i++)
         camera.draw(i);
-    }
 
     getchar();
 }
