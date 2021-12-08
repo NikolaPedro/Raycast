@@ -15,6 +15,10 @@ public:
         this->z = z;
     }
 
+    bool operator==(Vector3 other) {
+        return x == other.x && y == other.y && z == other.z;
+    }
+
     Vector3 operator+(Vector3 other) 
     {
         return Vector3(x + other.x, y + other.y, z + other.z);
@@ -45,7 +49,7 @@ public:
         );
     }
 
-    double get_scalar(Vector3 other) 
+    double dot(Vector3 other) 
     {
         return x * other.x + y * other.y + z * other.z; 
     }
